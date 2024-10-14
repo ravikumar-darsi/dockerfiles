@@ -6,18 +6,26 @@ docker tag image:version url/username/image:version .
 
 docker push image:version url/username/image:version 
 
-RUN vs CMD
+RUN vs CMD[More popular question]
 ---------------------------------
-when you run systemctl start catalogue
+when you run systemctl start catalogue, the following happens
 it will create one nodejs process and this process will run for infinte time....
 
 CMD instruction is to make your container running ..
 
 RUN ----> runs at the time of image building
-CMD ----> runs at the time of container creation
+CMD ----> runs at the time of container creation. [Container is nothing but running version of a image]
 
 Every container is a process....
 
 systemctl commands will not work in containers....
 
+command should be foreground and attach to the screen, then you should send it to the background
+
+LABEL
+LABEL instruction adds metadata to the instruction.
+
+we can give tag or some labels to identify the specific image/container from a bunch of resources
+
 EXPOSE
+This command is used to expose the port, specifically related to that container
