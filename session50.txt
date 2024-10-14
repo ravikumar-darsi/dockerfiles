@@ -42,3 +42,4 @@ both are used to copy the files from local to image  .... but ADD have 2 extra c
 1. It an directy download files from internet
 2. It can directy untar the tar files.
 
+
