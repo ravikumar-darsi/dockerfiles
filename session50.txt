@@ -43,3 +43,23 @@ both are used to copy the files from local to image  .... but ADD have 2 extra c
 2. It can directy untar the tar files.
 
 
+CMD vs ENTRYPOINT
+-----------------------------------
+both these commands at the time of container creation, but what's the differn=ence between them ???
+1. CMD command can be overridden by another command at run time
+2. ENTRYPOINT command can't be overridden, if you try to do so, the command you are entering at run time will go and append to ENTRYPOINT
+
+We can use CMD and ENTRYPOINT for best results
+
+1. You can use CMD instruction to supply default arguments to ENTRYPOINT
+2. user can always override CMD arguments from run time .
+
+
+ARG vs ENV
+--------------------------
+ARG instruction can provide vaues to the Dockerfile only at buildtime. ENV variables have access in the container
+
+
+ONBUILD
+------------------------------------
+author of image: I want to force users of image to follow something
