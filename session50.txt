@@ -1,6 +1,6 @@
 docker build -t url/username/image:version .
 
-docker build image:version .  -->locally
+docker build image:version .  --> locally
 
 docker tag image:version url/username/image:version .
 
