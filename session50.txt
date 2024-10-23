@@ -6,7 +6,7 @@ docker tag image:version url/username/image:version .
 
 docker push image:version url/username/image:version 
 
-RUN vs CMD[More popular question]
+RUN vs CMD [More popular question]
 ---------------------------------
 when you run systemctl start catalogue, the following happens
 it will create one nodejs process and this process will run for infinte time....
@@ -45,7 +45,7 @@ both are used to copy the files from local to image  .... but ADD have 2 extra c
 
 CMD vs ENTRYPOINT
 -----------------------------------
-both these commands at the time of container creation, but what's the differn=ence between them ???
+both these commands runs at the time of container creation, but what's the differnence between them ???
 1. CMD command can be overridden by another command at run time
 2. ENTRYPOINT command can't be overridden, if you try to do so, the command you are entering at run time will go and append to ENTRYPOINT
 
